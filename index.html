@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/index.css">
+	</head>
+	<body>
+		<div class="container clear">
+			<p class="notice"><a href="#">《版权信息声明》</a>在使用本网站前，请务必仔细阅读并透彻理解本声明.</p>
+			<p class="banner_first">欢迎进入哆啦书屋</p>
+			<div id="upAndIn"></div>
+		</div>
+		<div id="run">
+			<span style="font-size:20px">永远相信美好的事情即将发生.点这里
+			</span>
+		</div>
+		<div class="container clear banner_bottom">
+			<div class="banner_logo"></div>
+			<ul class="banner_second clear">
+				<li><a href="#">我的藏书屋</a></li>
+				<li><a href="#">借阅记录</a></li>
+				<li><a href="#">读书笔记</a></li>
+				<li><a href="#">我的预定</a></li>
+			</ul>
+		</div>
+		<div class="container position">
+			<ul class="banner_third clear">
+				<li class="first"><a href="#">首页</a></li>
+				<li><a href="#">题材</a>
+					<ul class="Two-header_one">
+						<li><a href="#">经典文学</a></li>
+						<li><a href="#">青春文学</a></li>
+						<li><a href="#">科幻著作</a></li>
+						<li><a href="#">武侠传说</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">国别</a>
+					<ul class="Two-header_two">
+						<li><a href="#">中国</a></li>
+						<li><a href="#">英国</a></li>
+						<li><a href="#">法国</a></li>
+						<li><a href="#">美国</a></li>
+						<li><a href="#">日本</a></li>
+					</ul>
+				</li>
+				<li class="last">
+					<a href="#">语种</a>
+					<ul class="Two-header_three">
+						<li><a href="#">中英</a></li>
+						<li><a href="#">中法</a></li>
+						<li><a href="#">中德</a></li>
+						<li><a href="#">中日</a></li>
+					</ul>
+				</li>
+			</ul>
+			<form class="clear form_right">
+				<input type="text" placeholder="请输入作家/书名" class="search"/>
+				<input type="button" class="submit"/>
+			</form>
+		</div>
+		<!-- 轮播 -->
+		
+	<div class="box" id="box">
+		<div class="slider" id="slider">
+			<div class="slide"><img src="img/banner.jpg" alt=""></div>
+			<div class="slide"><img src="img/backimg0.jpeg" alt=""></div>
+			<div class="slide"><img src="img/backimg1.jpeg" alt=""></div>
+			<div class="slide"><img src="img/backimg2.jpeg" alt=""></div>
+			<div class="slide"><img src="img/backimg3.jpeg" alt=""></div>
+			<div class="slide"><img src="img/banner.jpg" alt=""></div>
+			<div class="slide"><img src="img/backimg0.jpeg" alt=""></div>
+		</div>
+		<span id="left"><</span>
+		<span id="right">></span>
+		<ul class="nav" id="nav">
+			<li class="active"></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+		
+	</div>
+		<div class="container area">
+			<div class="Head-back"></div>
+			<p class="Head_first">新书上架</p>			
+			<div class="area_img_1">
+				<p class="p">可借阅20天</p>
+			</div>
+			<div class="area_img_2">
+				<p class="p">可借阅20天</p>
+			</div>
+			<div class="area_img_3">
+				<p class="p">可借阅20天</p>
+			</div>
+			<div class="area_img_4">
+				<p class="p">可借阅20天</p>
+			</div>
+			<div class="area_img_5">
+				<p class="p">可借阅20天</p>
+			</div>
+			<div class="Head-back_2"></div>
+			<p class="Head_second">大热图书</p>
+			<div class="area-img-1">
+				<p class="p">可借阅10天</p>
+			</div>
+			<div class="area-img-2">
+				<p class="p">可借阅10天</p>
+			</div>
+			<div class="area-img-3">
+				<p class="p">可借阅10天</p>
+			</div>
+			<div class="area-img-4">
+				<p class="p">可借阅10天</p>
+			</div>
+			<div class="area-img-5">
+				<p class="p">可借阅10天</p>
+			</div>
+		</div>
+		<div class="container end">
+			<div class="tip">
+				<div class="end_logo"></div>
+				<ul class="list_1">
+					<li><a href="#">借书指南</a></li>
+					<li><a href="#">借书演示</a></li>
+					<li><a href="#">免费注册</a></li>
+					<li><a href="#">会员等级</a></li>
+					<li><a href="#">常见问题</a></li>
+				</ul>
+				<ul class="list_2">
+					<li><a href="#">支付方式</a></li>
+					<li><a href="#">支付宝支付</a></li>
+					<li><a href="#">门店支付</a></li>
+					<li><a href="#">网银支付</a></li>
+				</ul>
+				<ul class="list_3">
+					<li><a href="#">物流配送</a></li>
+					<li><a href="#">运费政策</a></li>
+					<li><a href="#">配送服务政策</a></li>
+					<li><a href="#">签收验货</a></li>
+				</ul>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var ui = document.getElementById("upAndIn");
+		//登录
+		var dup=document.createElement("div");
+		dup.setAttribute("class","divup");
+		ui.appendChild(dup);
+		var buttonup = document.createElement("button");
+		buttonup.setAttribute("class","butup");
+		dup.appendChild(buttonup);
+		var textup = document.createTextNode("登录");
+		buttonup.appendChild(textup);
+		//查看
+		var din = document.createElement("div");
+		din.setAttribute("class","divin");
+		ui.appendChild(din);
+		buttonin = document.createElement("button");
+		buttonin.setAttribute("class","butin");
+		din.appendChild(buttonin);
+		var textin = document.createTextNode("查看");
+		buttonin.appendChild(textin);
+
+		
+		//点击登录
+		buttonup.onclick=function(){
+			window.location.href='file:///E:/workplace/web%E5%BC%80%E5%8F%91%E4%B8%80/%E4%BD%9C%E4%B8%9A/%E5%93%86%E5%95%A6%E7%BD%91/UpIn.html';//在当前页面打开； window.open("http://www.baidu.com");：打开新的窗口
+		}
+		buttonin.onclick=function(){
+			var ph=document.getElementsByClassName("Head_first")[0];
+			var ph1=document.getElementsByClassName("Head_second")[0];
+			alert("板块：" + ph.innerHTML + ' ' + ph1.innerHTML);
+		}
+
+		//轮播
+		var index = 1;
+		var timer;
+
+		function getStyle(obj,attr){
+			if(obj.currentStyle){
+				return obj.currentStyle[attr];
+			}else{
+				return getComputedStyle(obj,null)[attr];
+			}
+		}
+
+		window.onload = function(){
+			window.onclick = function(e){
+				document.body.style.backgroundColor = "	#FFF5EE";
+			}
+		}
+
+//流动的字
+		var divrun = document.getElementById("run");
+		divrun.onclick=function(){
+			var toplen=parseInt(getStyle(divrun,'top'));
+			time=setInterval(function(){
+				if(toplen<0){
+					toplen=toplen+2;
+					divrun.style.top=toplen +'px';
+				}else{
+					clearInterval(time);
+				}
+			},20);
+		}
+
+
+		
+
+		var box = document.getElementById('box');
+		var oNavlist = document.getElementById('nav').children;
+		var slider = document.getElementById('slider');
+		var left = document.getElementById('left');
+		var right = document.getElementById('right');
+		var index = 1;
+		var timer;
+		var isMoving = false;
+		box.onmouseover = function(){
+			animate(left,{opacity:50})
+			animate(right,{opacity:50})
+			clearInterval(timer)
+		}
+		box.onmouseout = function(){
+			animate(left,{opacity:0})
+			animate(right,{opacity:0})
+			timer = setInterval(next, 3000);
+		}
+		right.onclick = next;
+		left.onclick = prev;
+		for( var i=0; i<oNavlist.length; i++ ){
+			oNavlist[i].index = i;
+			oNavlist[i].onclick = function(){
+				index = this.index+1;
+				navmove();
+				animate(slider,{left:-1200*index});
+			}
+		}
+		function next(){
+			if(isMoving){
+				return;
+			}
+			isMoving = true;
+			index++;
+			navmove();
+			animate(slider,{left:-1200*index},function(){
+				if(index==6){
+					slider.style.left = '-1200px';
+					index = 1;
+				}
+				isMoving = false;
+			});
+		}
+		function prev(){
+			if(isMoving){
+				return;
+			}
+			isMoving = true;
+			index--;
+			navmove();
+			animate(slider,{left:-1200*index},function(){
+				if(index==0){
+					slider.style.left = '-6000px';
+					index = 5;
+				}
+				isMoving = false;
+			});
+		}
+		function navmove(){
+			for( var i=0; i<oNavlist.length; i++ ){
+				oNavlist[i].className = "";
+			}
+			if(index >5 ){
+				oNavlist[0].className = "active";
+			}else if(index<=0){
+				oNavlist[4].className = "active";
+			}else {
+				oNavlist[index-1].className = "active";
+			}
+		}
+		timer = setInterval(next, 3000);
+		function animate(obj,json,callback){
+	clearInterval(obj.timer);
+	obj.timer = setInterval(function(){
+		var isStop = true;
+		for(var attr in json){
+			var now = 0;
+			if(attr == 'opacity'){
+				now = parseInt(getStyle(obj,attr)*100);
+			}else{
+				now = parseInt(getStyle(obj,attr));
+			}
+			var speed = (json[attr] - now) / 8;
+			speed = speed>0?Math.ceil(speed):Math.floor(speed);
+			var cur = now + speed;
+			if(attr == 'opacity'){
+				obj.style[attr] = cur / 100;
+			}else{
+				obj.style[attr] = cur + 'px';
+			}
+			if(json[attr] !== cur){
+				isStop = false;
+			}
+		}
+		if(isStop){
+			clearInterval(obj.timer);
+			callback&&callback();
+		}
+	}, 30)
+}
+</script>
+	</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">	
+	<head>
+		<meta charset="UTF-8">
+		<style>
+			.div1{
+				text-align: center;
+				border: 5px yellow solid;
+				background:  url('img/b1.jpeg') no-repeat left;
+				height: 400px;
+				position: relative;
+				top: 20px;
+			}
+			.ps{
+				text-align: center;
+				position: relative;
+				top: 30px;
+			}
+			.pp1{
+				color: black;
+				font-weight: bolder;
+			}
+			.userp{
+				font-size:35px;
+				position: relative;
+				top: 50px;
+				left: 160px;
+
+			}
+			.userc{
+				font-size: 35px;
+				position: relative;
+				top: 80px;
+				left: 160px;
+			}
+			.pos2{
+				position: relative;
+				left: 160px;
+				top: 120px;
+			}
+			.buttonup{
+				width:100px;
+				height:60px;
+				font-size: 20px;
+				background-color:#2F4F4F;
+				color:white
+			}
+			.pchild{
+				display: inline-block;
+				border: 1px;
+				position:absolute;
+				top: 130px;
+				right: 160px;
+				
+			}
+			.child3{
+				display: inline-block;
+				position:absolute;
+				top: 206px;
+				right: 46px;
+			}
+			
+			
+		</style>
+	</head>
+	<body>
+		<body bgcolor="#8eafa9">
+		<div class="div1">
+				<form class="pos">
+					<p class="userp">用户名: <input type="text" value="" name="user" class="inp1" ></p>
+				</form>
+				<form class="pos1">
+					<p class="userc">设置密码：<input type="text" value="" name="password" id="inp2" ></p>
+				</form>
+				<form class="pos2">
+					<input type="button" value="提交" class="buttonup">
+				</form>
+		</div>
+		<div class="ps">
+			<p class="pp1">
+				在自己喜欢的时间里，按照自己喜欢的方式，去做自己喜欢的事，对我而言这便是自由人的定义。
+			</p>
+		</div>
+	</body>
+	<script type="text/javascript">
+		console.log("1");
+		var inp1 = document.getElementsByClassName("inp1")[0];
+		var inp2 = document.getElementById("inp2");
+		var pos = document.getElementsByTagName("form")[0];
+		var pos1 = document.getElementsByTagName("form")[1];
+		var buttonup1 = document.getElementsByClassName("buttonup")[0];
+		var div1 = document.getElementsByClassName("div1")[0];
+		inp1.onfocus=function(){
+			child1 = document.createElement("div");
+			child1.setAttribute("class","pchild");
+			document.body.appendChild(child1);
+			var tip = document.createTextNode("支持中文数字");
+			child1.appendChild(tip);
+			
+		}
+		
+		inp2.onfocus=function(){
+			child3 = document.createElement("div");
+			child3.setAttribute("class","child3");
+			var tip = document.createTextNode("建议使用两种字符组合");
+			child3.appendChild(tip);
+			pos1.appendChild(child3);
+		}
+		buttonup1.onclick=function(){
+			window.location.href="file:///E:/workplace/web%E5%BC%80%E5%8F%91%E4%B8%80/%E4%BD%9C%E4%B8%9A/%E5%93%86%E5%95%A6%E7%BD%91/index.html";
+
+		}
+
+	</script>
+	</html>
